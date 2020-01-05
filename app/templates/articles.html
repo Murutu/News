@@ -9,4 +9,10 @@
             <p class="card-text">{{article.description}}</p>
         </div> 
         <div class="card-footer text-muted">
-            <span>{{article.publishedAt}}   
+            <span>{{article.publishedAt}}</span>
+            <a href="{{article.url}}" class="btn btn-primary" target="_blank">Read More</a>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}
