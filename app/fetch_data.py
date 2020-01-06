@@ -32,5 +32,7 @@ def get_articles(source_id):
     '''
     articles_url = 'https://newsapi.org/v2/everything?sources={source_id}&apiKey={app.config["NEWS_API_KEY"]}'
     
-    res = requests.get(articles_url)   
+    res = requests.get(articles_url)
+    articles_data = res.json().get('articles')
+    return process_articles(articles_data)   
     
