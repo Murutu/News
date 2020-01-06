@@ -34,5 +34,11 @@ def get_articles(source_id):
     
     res = requests.get(articles_url)
     articles_data = res.json().get('articles')
-    return process_articles(articles_data)   
+    return process_articles(articles_data)
+
+def process_articles(articles_data):
+    '''
+    Function that converts articles dict into articles model
+    '''
+    articles = []   
     
