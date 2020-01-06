@@ -27,5 +27,10 @@ def process_sources(sources_data):
     return sources 
 
 def get_articles(source_id):
-    ''   
+    '''
+    Function that gets the json response to our url request
+    '''
+    articles_url = 'https://newsapi.org/v2/everything?sources={source_id}&apiKey={app.config["NEWS_API_KEY"]}'
+    
+    res = requests.get(articles_url)   
     
