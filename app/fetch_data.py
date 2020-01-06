@@ -40,5 +40,10 @@ def process_articles(articles_data):
     '''
     Function that converts articles dict into articles model
     '''
-    articles = []   
+    articles = [] 
+    for article_data in articles_data:
+        article = Article(article_data['author'], article_data['title'], article_data['description'],
+                          article_data['url'], article_data['urlToImage'], article_data['publishedAt'])
+        articles.append(article)
+        return articles  
     
