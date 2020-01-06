@@ -9,6 +9,15 @@ class Source:
      self.url = url
      self.category = category
      self.language = language
+     self.country = country
+     
+     
+class Article:
+    '''
+    Article class to define Article Objects
+    '''
+    def __init__(self, athor, title, description, url, urlToImage, publishedAt):
+        self   
      
     
     
