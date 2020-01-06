@@ -18,4 +18,8 @@ def process_sources(sources_data):
     '''
     Function that converts source dict into source model
     '''
+    sources = []
+    for source_data in sources_data:
+        source = Source(source_data['id'], source_data['name'], source_data['description'], source_data['url'],
+                         source_data['category'], source_data['langauge'], source_data['country'])
     
