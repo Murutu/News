@@ -1,0 +1,2 @@
+DEBUG = True
+NEWS_API_KEY = 'bf2d30bc84e1419abab595739a664dd9'
