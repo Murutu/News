@@ -10,5 +10,12 @@ def get_sources():
     sources_url = 'https://newsapi.org/v2/sources?apiKey=apiKey={app.config["NEWS_API_KEY"]}'
     
     res = requests.get(sources_url)
-    sources_data
+    sources_data = res.json().get('sources')
+    return process_sources(sources_data)
+
+
+def process_sources(sources_data):
+    '''
+    Function that converts source dict into source model
+    '''
     
