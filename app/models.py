@@ -4,14 +4,15 @@ class Source:
     '''
     Source class to define Source Objects
     '''
-    def __init__(self, id, name, description, url, category, language, country):
+    def __init__(self, id, name, description, url, author, publishedAt, content, urlToImage):
      self.id = id
      self.name = name
      self.description = description
      self.url = url
-     self.category = category
-     self.language = language
-     self.country = country
+     self.author = author
+     self.content = content
+     self.urlToImage = urlToImage
+     self.publishedAt = publishedAt
      
      
 class Article:
