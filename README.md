@@ -2,7 +2,7 @@
 
 An application that will help users to list and preview news articles from various sources.
 
-##Built By Peter Murutu
+## Built By Peter Murutu
 
 
 ### Description
