@@ -1,16 +1,16 @@
-###NewsNow
+### NewsNow
 
 An application that will help users to list and preview news articles from various sources.
 
 ##Built By Peter Murutu
 
 
-###Description
+### Description
 
 
 NewsNow is a web application that displays a list of various news sources like BBC, Al Jazeera, Bloomberg and many more. On choosing a news source, it will preview the top news articles of the day. Clicking a news article will redirect the user to read it fully from the news source. It achieves this by using the News API.
 
-###User Stories
+### User Stories
 
 
 These are the behaviours/features that the application implements for use by a user.
@@ -23,7 +23,7 @@ See the top news articles from that news source
 See the image, description and time the news article was created
 Click on an article and read it fully from the news source
 
-###Specifications
+### Specifications
 
 
 Behaviour	Input	Output
@@ -33,7 +33,7 @@ Display the preview of an article	On page load	Each article displays an image, t
 Read an entire article	Click Read More	Redirected to the news source's site to read the entire article
 Go back to news sources	Click on NewsGram	Redirected to the news source list
 
-###SetUp / Installation Requirements
+### SetUp / Installation Requirements
 
 Prerequisites
 python3.6
@@ -44,7 +44,7 @@ In your terminal:
   $ cd 
 
 
-###Running the Application
+### Running the Application
 
 Creating the virtual environment
 
@@ -65,7 +65,7 @@ Setting up the API Key
   * Insert the API Key you received from News Api where <Your-Api-Key> is.
 To run the application, in your terminal: $ python3.6 run.py
 
-###Testing the Application
+### Testing the Application
 
 
 To run the tests for the class files:
@@ -73,13 +73,13 @@ To run the tests for the class files:
   $ python3.6 -m unittest discover -s tests
 
 
-###Technologies Used
+### Technologies Used
 
 
 Python3.6
 Flask
 
 
-###License
+### License
 
 MIT ©2019 Peter Murutu
