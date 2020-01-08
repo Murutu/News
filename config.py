@@ -1,2 +1,30 @@
-DEBUG = True
-NEWS_API_KEY = 'bf2d30bc84e1419abab595739a664dd9'
+import os
+class Config:
+    '''
+    General configuration parent class
+    '''
+    TOP_NEWS_URL = "https://newsapi.org/v2/top-headlines?language=en&apiKey={}"
+    TOP_NEWS_BY_SOURCE_URL = "https://newsapi.org/v2/top-headlines?sources={}&apiKey={}"
+    SEARCH_NEWS_URL = "https://newsapi.org/v2/top-headlines?q={}&apiKey={}"
+    CATEGORY_NEWS_URL = "https://newsapi.org/v2/top-headlines?category={}&apiKey={}"
+    NEWS_SOURCES_URL = "https://newsapi.org/v2/sources?apiKey={}"
+    # API key is stored as environmental variable
+    NEWS_API_KEY = os.environ.get("NEWS_API_KEY")
+class ProdConfig(Config):
+    '''
+    Production  configuration child class
+    Args:
+        Config: The parent configuration class with General configuration settings
+    '''
+    pass
+class DevConfig(Config):
+    '''
+    Development  configuration child class
+    Args:
+        Config: The parent configuration class with General configuration settings
+    '''
+    DEBUG = True
+config_options = {
+    "development": DevConfig,
+    "production": ProdConfig
+}

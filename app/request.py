@@ -1,8 +1,8 @@
-from app import app
 import requests
 import json
 from .models import Source #Article
 from app.models import Article
+# from app import app
 
 def get_sources():
     '''
