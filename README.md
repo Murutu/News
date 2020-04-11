@@ -49,11 +49,10 @@ $ python3.6 -m pip install requests
 To be able to gather article info from the News API you will need an API Key.
 Visit [Newsapi](https://newsapi.org/) v4+ to run.
 - Insert the API Key you received from News Api where <Your-Api-Key> is.
-- To run the application, in your terminal: ```sh
- $ python3.6 run.py
-```
+- To run the application, in your terminal: $ python3.6 run.py .
 
 ### Technologies Used
+
 ```sh
 $ Python3.6
 $ Flask
